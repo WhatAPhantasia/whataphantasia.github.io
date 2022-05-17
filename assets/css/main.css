@@ -1,0 +1,31 @@
+/*wow. it's a css document! FINALLY some code i understand */
+
+/*----------------TOPBAR----------------*/
+.topbar {
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    margin-top: 0px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    width: 100%;
+    background-color: {color:top bar background};
+    z-index: -4;
+}
+.topbar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.topbar a.active {
+	background-color: #04AA6D;
+	color: white;
+}
