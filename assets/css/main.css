@@ -10,7 +10,7 @@
     right: 0;
     height: 55px;
     width: 100%;
-    background-color: {color:top bar background};
+    background-color: #000;
     z-index: -4;
 }
 .topbar a {
