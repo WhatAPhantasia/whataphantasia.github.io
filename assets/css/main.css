@@ -29,3 +29,10 @@
 	background-color: #04AA6D;
 	color: white;
 }
+
+
+/*----------------BODY----------------*/
+body {
+	background-image: url("img/bg1.png");
+	background-color: #ab240f;
+}
