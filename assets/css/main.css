@@ -8,10 +8,10 @@
     margin-top: 0px;
     left: 0;
     right: 0;
-    height: 55px;
+    height: 50px;
     width: 100%;
-    background-color: #000;
-    z-index: -4;
+    background-color: #1a001a;
+    z-index: -1;
 }
 .topbar a {
 	float: left;
@@ -29,6 +29,38 @@
 	background-color: #04AA6D;
 	color: white;
 }
+#topsparkle {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5px 0px 0px 14px;
+}
+#topsparkle img {
+	width: 30px;
+	padding: 4.5px;
+}
+#topsmol {
+	top: 0;
+	left: 0;
+	padding: 10px 0px 0px 64px;
+	letter-spacing: 2px;
+	color: #b5a7ba;
+	font-size: 10px;
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+}
+/*hr.topleft {
+	haha jk i cant figure out hr
+}*/
+#topmid {
+	top: 0;
+	left: 0;
+	padding: 3px 0px 0px 64px;
+	color: #b5a7ba;
+	font-size: 14px;
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+}
 
 
 /*----------------BODY----------------*/
@@ -39,5 +71,4 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 }
