@@ -9,7 +9,8 @@
 		<meta property="og:title" content="whataphantasia!"/>
 		<meta property="og:description" content="can you hear me through all the radio static? a personal website."/>
 		<!--<meta property="og:url" content="https://whataphantasia.github.io/PHANTASMAGORICAL/index.html"/> TODO: reactive after changing repo name-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<script src="assets/js/main.js"></script>
 	</head>
 		<div class="topbar">
 			<div id="topsparkle">
@@ -17,6 +18,14 @@
 			</div>
 			<div id="topsmol">what a phantasia!</div>
 			<div id="topmid">phantasia / eshal</div>
+			
+			<div class="dropdown">
+				<button onclick="toggleDropdown()" class="dropbtn">Index</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Home</a>
+					<a href="#">Sample</a>
+				</div>
+			</div>
 			
 			<!--<a class="active" href="#home">Home</a>
 			<a href="#news">News</a>
