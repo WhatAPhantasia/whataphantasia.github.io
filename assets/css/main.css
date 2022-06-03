@@ -13,7 +13,7 @@
     background-color: #1a001a;
     z-index: -1;
 }
-.topbar a {
+/*.topbar a {
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
@@ -22,13 +22,13 @@
 	font-size: 17px;
 }
 .topbar a:hover {
-	background-color: #ddd;
+	background-color: transparent;
 	color: black;
 }
 .topbar a.active {
-	background-color: #04AA6D;
+	background-color: transparent;
 	color: white;
-}
+}*/
 #topsparkle {
 	position: fixed;
 	top: 0;
@@ -62,54 +62,107 @@
 	font-weight: bold;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: #b5a7ba;
-  padding: 16px;
-  font-size: 16px;
-  font-family: "Courier New", monospace;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
+#topright {
+	position: fixed;
+	top: 0;
+    margin-top: 0px;
+    right: 0;
+}
+
+#toprightborder {
+	position: absolute;
+	border-left: 1.6px solid #b5a7ba;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 226, 1) 48%, rgba(255, 255, 255, 0) 100%);
+	border-image-slice: 1;
+	border-image-outset: 1.6px;
+	top: 20%;
+	bottom: 20%;
+}
+
+
+/* button for opening sidebar */
+.indexbtn {
+	background-color: transparent;
+	color: #b5a7ba;
+	padding: 16px 32px;
+	font-size: 16px;
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+.indexbtn img {
+	position: relative;
+	z-index: 1;
+	top: 1px;
+	filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);
+	transition: transform 0.6s ease;
 }
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+.indexbtn:hover, .indexbtn:focus {
+	background-color: #2c112c;
+	color: #d7c8dc;
 }
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.indexbtn:hover img, .indexbtn:focus img {
+	filter: invert(89%) sepia(16%) saturate(237%) hue-rotate(237deg) brightness(97%) contrast(78%);
 }
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.indexbtn:focus img {
+	transform: rotate(90deg);
 }
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* sidepanel menu*/
+.sidepanel {
+	height: 100%;
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 50px;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 50px;
+	transition: 0.6s;
 }
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
+.sidepanel .closebtn {
+	background-color: transparent;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 55px;
+	font-size: 36px;
+	margin: 0px 50px;
+}
+/* The sidepanel links */
+.sidepanel a {
+	background-color: transparent;
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Courier New", monospace;
+	font-weight: 500;
+	font-size: 20px;
+	display: block;
+	color: #9c91a0;
+	transition: 0.3s;
+}
+.sidepanel a:hover {
+	color: #b5a7ba;
+	font-weight: 550;
+}
 
 /*----------------BODY----------------*/
 body {
 	background-image: url("img/bg1.png");
-	background-color: #ab240f;
+	background-color: #792e88;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100%;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 10px;
 }
