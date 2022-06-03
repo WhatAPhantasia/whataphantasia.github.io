@@ -4,21 +4,21 @@ function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }*/
 
-// Close the sidebar if the user clicks outside of it. still a bit funky bc if you click on the black part it still goes away but ahwduawud its not a big problem
+// Close the sidebar if the user clicks outside of it. i'm excluding .sidepanel from the included events bc i dont like how it looks. i might change it to include dropdown menus if i implement that into the sidebar
 window.onclick = function(event) {
-  if (!event.target.matches('.indexbtn'||'.sidepanel')) {
+  if (!event.target.matches('.indexbtn, .indexbtn img')) {
     if (document.getElementById("mySidepanel").style.width="250px") {
 		document.getElementById("mySidepanel").style.width = "0px";
     }
   }
 }
 
-/* Set the width of the sidebar to 250px (show it) */
+/* Set the width of the sidebar to 250px */
 function openNav() {
   document.getElementById("mySidepanel").style.width = "250px";
 }
 
-/* Set the width of the sidebar to 0 (hide it) */
+/* Set the width of the sidebar to 0. i guess i dont need this anymore but keeping it just in case */
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
@@ -30,7 +30,7 @@ function toggleSidebar() {
 	else {
 		document.getElementById("mySidepanel").style.width = "0px";
 	}
-}
+} //for some reason the else statement isnt working?? keeping it just bc yk
 
 /*function toggleSidebar() {
 	var checkBox = document.getElementById("indexCheck");

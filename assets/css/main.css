@@ -11,7 +11,7 @@
     height: 50px;
     width: 100%;
     background-color: #1a001a;
-    z-index: -1;
+    z-index: 3;
 }
 /*.topbar a {
 	float: left;
@@ -115,7 +115,7 @@
 	height: 100%;
 	width: 0; /* 0 width - change this with JavaScript */
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
+	z-index: 5; /* Stay on top */
 	top: 50px;
 	right: 0;
 	background-color: #111;
@@ -138,6 +138,7 @@
 	padding: 8px 8px 8px 8px;
 	text-decoration: none;
 	text-align: center;
+	left: 50px;
 	font-family: "Courier New", monospace;
 	font-weight: 500;
 	font-size: 20px;
@@ -159,10 +160,43 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+#toplights, #toplights img {
+	position: fixed;
+	top: 50px;
+	z-index: 2;
+	display: block;
+    max-width: 100%;
+    max-height: 100vh;
+	object-fit: cover;
+    height: auto;
+	margin: 0;
+    padding: 0;
+}
+
+.topimage {
+	
+}
+.topimage img {
+	
+}
+
+.main {
+	margin: 0px 30px;
+	padding: 10px;
+	background-color: #280028;
+	display: block;
+	padding-bottom: 2000px;
+	z-index: 1;
+	
 }
 
 
 footer {
 	position: absolute;
 	bottom: 10px;
+	left: 10px;
 }
