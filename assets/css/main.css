@@ -3,11 +3,8 @@
 /*----------------TOPBAR----------------*/
 .topbar {
     position: fixed;
-    margin: 0 auto;
     top: 0;
     margin-top: 0px;
-    left: 0;
-    right: 0;
     height: 50px;
     width: 100%;
     background-color: #1a001a;
@@ -158,12 +155,25 @@ body {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	height: 100%;
 	width: 100%;
 	margin: 0;
     padding: 0;
 	overflow-x: hidden;
+	font-family: "Courier New", monospace;
+}
+#background_wrap {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("img/bg1.png");
+    background-attachment: scroll;
+	background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar {
@@ -182,13 +192,13 @@ body {
   background: #555;
 }
 
-#toplights, #toplights img {
-	position: relative;
-	top: 25px;
+.toplights, .toplights img {
+	position: fixed;
+	top: 50px;
 	z-index: 2;
     width: 100vw !important;
     max-height: 100% !important;
-	text-align: center;
+	transition: top 0.5s;
 }
 
 .topimage, .topimage img {
@@ -196,7 +206,7 @@ body {
 	z-index: 1;
     width: 70vw;
     max-height: 100%;
-	margin: -3vw 8vw 0;
+	margin: 14vw 8vw 0;
 }
 
 .main {
