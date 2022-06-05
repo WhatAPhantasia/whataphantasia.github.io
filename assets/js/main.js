@@ -20,7 +20,7 @@ window.onscroll = function() {
   if (prevScrollPos > currentScrollPos) {
     document.getElementById("toplights").style.top = "50px";
   } else {
-    document.getElementById("toplights").style.top = "-25px";
+    document.getElementById("toplights").style.top = "-10px";
   }
   prevScrollPos = currentScrollPos;
 }*/
