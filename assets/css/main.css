@@ -150,7 +150,7 @@
 
 /*----------------BODY----------------*/
 body {
-	background-image: url("img/bg1.png");
+	/*background-image: url("img/bg1.png");*/
 	background-color: #792e88;
 	background-attachment: fixed;
 	background-position: center;
@@ -172,7 +172,7 @@ body {
     width: 100%;
     background-size: cover;
     background-image: url("img/bg1.png");
-    background-attachment: fixed;
+    background-attachment: scroll;
 	background-repeat: no-repeat;
 }
 
@@ -192,13 +192,13 @@ body {
   background: #555;
 }
 
-.toplights, .toplights img {
+#toplights, #toplights img {
 	position: fixed;
-	top: 50px;
 	z-index: 2;
     width: 100vw !important;
     max-height: 100% !important;
-	transition: top 0.5s;
+	pointer-events: none;
+	transition: top 1s;
 }
 
 .topimage, .topimage img {

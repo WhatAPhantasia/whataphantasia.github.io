@@ -13,25 +13,25 @@ window.onclick = function(event) {
   }
 }
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
+/* i wanted to make the stringlights sticky but this ended up not working sooooooo yeah */
+/*var prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("toplights").style.top = "0";
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("toplights").style.top = "50px";
   } else {
-    document.getElementById("toplights").style.top = "-50px";
+    document.getElementById("toplights").style.top = "-25px";
   }
-  prevScrollpos = currentScrollPos;
-}
-/*window.addEventListener("scroll",function() { 
-   if(window.scrollY > 10) {
-      $('.toplights').slideUp();
+  prevScrollPos = currentScrollPos;
+}*/
+window.addEventListener("scroll",function() { 
+   if(window.scrollY > 200) {
+      document.getElementById("toplights").style.top = "-10px";
    }
    else {
-      $('.toplights').slideDown();
+      document.getElementById("toplights").style.top = "50px";
    }
-},false);*/
+},false);
 
 /* Set the width of the sidebar to 250px 
 function openNav() {
