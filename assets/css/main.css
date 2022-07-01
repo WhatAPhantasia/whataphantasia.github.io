@@ -1,5 +1,32 @@
 /*wow. it's a css document! FINALLY some code i understand */
 
+
+
+/*----------------Column code-----------*/
+/*so basically. just smack on a class="column" onto a div in a row and put the content in that div. ez*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
 /*----------------TOPBAR----------------*/
 .topbar {
     position: fixed;
@@ -28,8 +55,6 @@
 }*/
 #topsparkle {
 	position: fixed;
-	top: 0;
-	left: 0;
 	padding: 5px 0px 0px 14px;
 }
 #topsparkle img {
@@ -37,8 +62,6 @@
 	padding: 4.5px;
 }
 #topsmol {
-	top: 0;
-	left: 0;
 	padding: 10px 0px 0px 64px;
 	letter-spacing: 2px;
 	color: #b5a7ba;
@@ -50,8 +73,6 @@
 	haha jk i cant figure out hr
 }*/
 #topmid {
-	top: 0;
-	left: 0;
 	padding: 3px 0px 0px 64px;
 	color: #b5a7ba;
 	font-size: 14px;
@@ -88,7 +109,6 @@
 	border: none;
 	cursor: pointer;
 }
-
 .indexbtn img {
 	position: relative;
 	z-index: 1;
@@ -96,6 +116,7 @@
 	filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);
 	transition: transform 0.6s ease;
 }
+
 /* Dropdown button on hover & focus */
 .indexbtn:hover, .indexbtn:focus {
 	background-color: #2c112c;
@@ -132,7 +153,7 @@
 /* The sidepanel links */
 .sidepanel a {
 	background-color: transparent;
-	padding: 8px 8px 8px 8px;
+	padding: 8px;
 	text-decoration: none;
 	text-align: center;
 	left: 50px;
@@ -174,6 +195,14 @@ body {
     background-image: url("img/bg1.png");
     background-attachment: scroll;
 	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 ::-webkit-scrollbar {
@@ -214,9 +243,58 @@ body {
 	padding: 10px;
 	background-color: #280028;
 	display: block;
-	padding-bottom: 2000px;
+	padding-bottom: 100px;
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #b5a7ba;
 	z-index: 1;
-	
+}
+.inner {
+	margin: auto;
+	text-align: center;
+	width: 85%;
+	padding: 20px 0;
+	background-color: transparent;
+	z-index: 1;
+}
+b.inner {
+	font-weight: 800;
+}
+#bigicon, #bigicon img {
+	display: block;
+	z-index: 1;
+	max-height: 100%;
+	width: 26rem;
+	position: relative;
+	border-radius: 10%;
+	text-align: center;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 700px) {
+	.main {
+		margin: 0;
+	}
+	.topimage, .topimage img {
+		width: 80vw;
+		margin: 12vh 6vw 0;
+	}
+	.column {
+    width: 100%;
+	}
 }
 
 
