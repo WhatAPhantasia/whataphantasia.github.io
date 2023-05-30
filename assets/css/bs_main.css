@@ -1,9 +1,9 @@
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #333;
+	background: #333;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -11,22 +11,22 @@
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+	background: #555;
 }
 
 ::selection {
-  background: #7b6317;
-  color: #cccccc;
+	background: #7b6317;
+	color: #cccccc;
 }
 
 /* unvisited link and visited link */
 a:link, a:visited {
-  color: #f7c420;
+	color: #f7c420;
 }
 
 /* mouse over link and selected link */
 a:hover, a:active {
-  color: #e4cfb3;
+	color: #e4cfb3;
 }
 
 
@@ -38,24 +38,24 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-  padding: 0;
+	padding: 0;
 	overflow-x: hidden;
 	font-family: "Courier New", monospace;
-  font-weight: bold;
+	font-weight: bold;
 	font-size: 18px;
 	line-height: 1.6;
 	color: #b5a7ba;
 }
 #background_wrap {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-image: url("img/bg1.png");
-  background-attachment: scroll;
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url("img/bg1.png");
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	text-align: center;
 }
@@ -74,16 +74,16 @@ body {
 #toplights, #toplights img {
 	position: fixed;
 	z-index: 2;
-  width: 100vw !important;
-  max-height: 100% !important;
+	width: 100vw !important;
+	max-height: 100% !important;
 	pointer-events: none;
 	transition: top 1s;
 }
 .topimage, .topimage img {
 	display: block;
 	z-index: 1;
-  width: 75vw;
-  max-height: 100%;
+	width: 75vw;
+	max-height: 100%;
 }
 
 .btn-dark, .btn-dark:visited {
