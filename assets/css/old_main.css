@@ -1,29 +1,36 @@
 /*wow. it's a css document! FINALLY some code i understand */
 
-
-
 /*----------------Column code-----------*/
 /*so basically. just smack on a class="column" onto a div in a row and put the content in that div. ez*/
 /* Create two equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  box-sizing: border-box;
+	float: left;
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive mobile layout stuff */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+	/* makes main body stretch across the screen */
+	.main {
+		margin: 0;
+	}
+	/* makes the two columns stack on top of each other instead of next to each other */
+	.column {
+		width: 100%;
+	}
+	.topimage, .topimage img {
+		width: 80vw;
+		margin: 12vh 6vw 0;
+	}
 }
 
 
@@ -282,19 +289,6 @@ b.inner {
   font-size: 20px;
   margin: 4px 2px;
   border-radius: 10%;
-}
-
-@media screen and (max-width: 700px) {
-	.main {
-		margin: 0;
-	}
-	.topimage, .topimage img {
-		width: 80vw;
-		margin: 12vh 6vw 0;
-	}
-	.column {
-    width: 100%;
-	}
 }
 
 
