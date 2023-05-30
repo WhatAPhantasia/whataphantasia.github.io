@@ -1,62 +1,210 @@
 <!DOCTYPE html>
 
+<!--this was my attempt at remaking the website w bootstrap but. tbh. im really not feeling like redoing the whole thing-->
+
 <html lang="en">
-	<head>
-		<title>whataphantasia!</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta property="og:type" content="website"/>
-		<meta property="og:title" content="whataphantasia!"/>
-		<meta property="og:description" content="can you hear me through all the radio static? phantasia's personal website."/>
-		<!--<meta property="og:url" content="https://whataphantasia.github.io/PHANTASMAGORICAL/index.html"/> TODO: reactive after changing repo name-->
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<script src="assets/js/main.js"></script>
-	</head>
+<head>
+	<title>whataphantasia!</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="whataphantasia!"/>
+	<meta property="og:description" content="can you hear me through all the radio static? phantasia's personal website."/>
+	<!--<meta property="og:url" content="https://whataphantasia.github.io/PHANTASMAGORICAL/index.html"/> TODO: reactive after changing repo name-->
 	
-	<body>
-		<div class="topbar">
-			<div id="topsparkle"><img src="img/sparkle1.png"></div>
-			<div id="topsmol">what a phantasia!</div>
-			<div id="topmid">eshal's personal website :]</div>
-			<div id="topright">
-			<div id="toprightborder"></div>
-				<button onclick="toggleSidebar()" class="indexbtn">
-					<img src="img/arrow1.png" width="19" height="10">
-					Index
-				</button>
-			</div> <!--TODO: man i really want to make this whole indexbtn thing a checkbox but i cant figure out how-->
-			<div id="mySidepanel" class="sidepanel">
-				<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Clients</a>
-				<a href="#">Contact</a>
+	<!--bootstrap-->
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+	<!--overwrite bootstrap stuff-->
+	<link href="assets/css/bs_main.css" rel="stylesheet">
+	<script src="assets/js/bs_main.js"></script>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+</head>
+
+<body>
+	<!-- navbar! -->
+	<nav class="navbar navbar-dark ps-2 p-0 fixed-top" style="background-color: #1a001a; z-index: 3;">
+		<div class="container-fluid">
+
+			<!-- sparkle and header text -->
+			<a class="navbar-brand" href="#index" style="color: #b5a7ba;">
+				<img src="img/masks-theater-solid.svg" alt="home button" width="30" height="30" class="d-inline-block align-text-top" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
+				<div class="d-none d-sm-inline-flex flex-column align-text-top">
+					<span style="font-size: 11px; line-height: 1.2;">what a phantasia!</span>
+					<span style="font-size: 15px; line-height: 1.3;">silly personal website :3</span>
+				</div>
+			</a>
+
+			<div>
+			<!-- button divider -->
+			<div class="align-right" id="navborder"></div>
+			<!-- button shit -->
+			<button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="d-none d-md-inline-block align-middle" style="font-size: 15px; color: #b5a7ba;">index</span>
+				<!--<i class="fa-solid fa-ghost fa-lg ml-lg-2 ml-0 align-middle" aria-hidden="true"></i>-->
+				<img src="img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
+			</button>
+			</div>
+
+			<!-- navbar content -->
+			<div class="offcanvas offcanvas-end text-bg-dark" style="background-color: #1a001a;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">navigation!</h5>
+					<button type="button" class="btn btn-default" data-bs-dismiss="offcanvas" aria-label="Close">
+						<img src="img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
+					</button>
+				</div>
+				<div class="offcanvas-body fw-normal" style="color: #b5a7ba; font-family: 'Exo 2', sans-serif;">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<!--navigation tab items-->
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#index">
+							home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#socials">
+							about me & da site!</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							projects</a>
+						<ul class="dropdown-menu dropdown-menu-dark">
+							<li><a class="dropdown-item" href="#">original works</a></li>
+							<li><a class="dropdown-item" href="#">fandom works</a></li>
+							<li><a class="dropdown-item" href="#">ukagakas</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#coms">
+							commissions</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#portfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							portfolio & art archive</a>
+						<ul class="dropdown-menu dropdown-menu-dark">
+							<li><a class="dropdown-item" href="#">2023 art portfolio</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">ALL THE ART</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#DA-HOARD" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							webshrines & hoards :3</a>
+						<ul class="dropdown-menu dropdown-menu-dark">
+							<li><a class="dropdown-item" href="#">DIB MEMBRANE!! <3</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">gender hoard</a></li>
+							<li><a class="dropdown-item" href="#">graphics hoard</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#links">
+							external links</a>
+					</li>
+				  	</ul>
+				</div>
+
+		</div>
+	</nav>
+	<!-- navbar! -->
+
+	<div id="background_wrap"></div>
+	
+	<!-- the toplights get their own css id because! vw cant be set up w html </3 -->
+	<div id="toplights" style="top: 35px;"><img src="img/stringlights.png"></div>
+
+	
+	<!-- top image -->
+	<div class="topimage mx-auto" style="margin-top: 15%;">
+		<img src="img/menbubble.png" alt="a drawing of the website owner, phantasia. they are relaxing on a pile of pillows. greet you by saying: [what a phantasia! welcome to my funky little corner on the internet!!]">
+	</div>
+
+	<!-- actual body for text and content LMAO -->
+	<div class="col-xl-11 p-3 mx-auto" style="background-color: #280028;">
+		<div class="row p-2 justify-content-center">
+			<div class="col-md-5 my-3 text-center">
+				<div class="d-inline-flex flex-column text-center justify-content-center">
+					<!--um... fix the image sizing issue later...-->
+					<img src="img/2023phantasiapfp.png" class="rounded mx-auto d-block" style="width: 90%;" alt="A profile picture of Phantasia's mascot. Her mask is off and she is smiling at the viewer in a 3/4 perspective with her hand raised to her cheek.">
+					<span class="pt-3" style="color: white;">call me phantasia!! or phanta lol</span>
+					<span class="fw-normal" style="font-size: 15px; padding-top: 0.5em;">ne/nim/neir/neirs/nimself, they/them, she/her</span>
+					<span class="fw-normal" style="font-size: 15px;">am a minor so pls dont be weird <3</span>
+				</div>
+			</div>
+			<div class="col-md-5 my-3 text-center">
+				<div class="d-grid gap-3">
+					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
+						about me & da site!</button>
+					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
+						projects</button>
+					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
+						commissions</button>
+					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
+						portfolio & art archive</button>
+					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
+						webshrines & hoards :3</button>
+					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
+						external links</button>
+					<!-- i,,, think i can put my social links here too LOL -->
+					<div class="d-inline-flex">
+						<p>ok nvm this space is for badges and stuff (IF ONLY I HAD ANY)</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	
-		<div id="background_wrap"></div>
-	
-		<!--<div id="topbarspacer"></div>-->
-		<div id="toplights" style="top: 50px;"><img src="img/stringlights.png"></div>
-		<div class="topimage"><img src="img/menbubble.png" alt="an illustration of the website owner, eshal. they greet you by saying: [what a phantasia! welcome to my funky little corner on the internet!!]"></div>
-		<div class="main">
-			<div class="inner">
-			<div class="row">
-				<div class="column">
-					<img src="img/2021phantasiapfp.png" alt="a profile picture of phantasia." id="bigicon">
-					<p><b>call me phantasia/eshal!</b><br>she/they, minor</p>
-				</div>
-				<div class="column">
-					<div class="button">hm?</div>
-					<div class="button">ooh</div>
-				</div>
-			</div>
-			<p><a href="https://www.flaticon.com/" title="Free icons">Free icons taken from Flaticon</a></p>
+		<div class="row row-cols-1 p-2">
+			<div class="col-11 mt-3 px-5 fw-normal justify-content-center" style="font-family: 'Exo 2', sans-serif; margin-left: 4%;">
+				<blockquote class="blockquote text-center">
+					<p>"can you hear me through all the radio static? can you see me through the window in the attic?"</p>
+				</blockquote>
+				<figcaption class="blockquote-footer text-end mb-5">
+					<cite>ghost song, by ratwyfe</cite> : quote last updated march 2023
+				</figcaption>
+
+				<p><span class="ms-4"></span>hey what's up gamers!!!! this site is a BIG work in progress and i know WAY less abt html and css than i think i do!! i'll ramble more about da site and me in the first button up there but here i will say <a href="#guestbook">SIGN MY GUESTBOOK</a> and contact me with ur thoughts abt da site!!!!</p>
+				<p><span class="ms-4"></span>i just redid the site with bootstrap so THEORETICALLY it should look ok on smaller screens but im not gonna optimize this for mobile LOL. that top image of me is never gonna be fixed</p>
 			</div>
 		</div>
-	
-	</body>
-	<footer>
-		
-	</footer>
+	</div>
+</body>
+
+<footer>
+	<div class="col-xl-11 p-1 mt-1 mx-auto" style="background-color: #280028;">
+		<div class="row row-cols-1">
+			<div class="col-11 mt-3 px-5 fw-normal justify-content-center text-center" style="font-family: 'Exo 2', sans-serif; font-size: 12px; margin-left: 4%;">
+				<p style="margin: 0;">socials ordered left-right by use</p>
+				
+				<p>
+					<a href="https://whataphantasia.tumblr.com/">
+						Tumblr</a> | 
+					<a href="https://twitter.com/WhatAPhantasia">
+						Twitter</a> | 
+					<a href="https://toyhou.se/WhatAPhantasia">
+						Toyhou.se</a> | 
+					<a href="https://www.pinterest.com/WhatAPhantasia/">
+						Pinterest</a> | 
+					<a href="https://www.wattpad.com/user/WhatAPhantasia">
+						Wattpad</a> | 
+					<a href="https://archiveofourown.org/users/WhatAPhantasia">
+						AO3</a> | 
+					<a href="https://www.youtube.com/channel/UC_nTsHvMJym7y0nQNInuL2w">
+						Youtube</a> | 
+					<a href="https://www.twitch.tv/whataphantasia">
+						Twitch</a> | 
+					<a href="https://whataphantasia.itch.io/">
+						Itch.io</a> | 
+					<a href="https://www.instagram.com/whataphantasia/">
+						Instagram</a>
+				</p>
+
+				<p>free icons taken from <a href="https://www.flaticon.com/">Flaticon</a> + <a href="https://fontawesome.com/">Font Awesome!</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
 </html>
