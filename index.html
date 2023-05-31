@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <!--this was my attempt at remaking the website w bootstrap but. tbh. im really not feeling like redoing the whole thing-->
+<!-- and then i did -->
 
 <html lang="en">
 <head>
@@ -31,6 +32,7 @@
 
 <body>
 	<!-- navbar! -->
+	<!-- im actually not sure if jquery is... the best solution to this? its not the most reliable method for doing this,, -->
 	<div id="nav-base"></div>
 	<script>
 	$(function(){
@@ -46,6 +48,7 @@
 
 	
 	<!-- top image -->
+	<!--um... fix the image sizing issue later...-->
 	<div class="topimage mx-auto" style="margin-top: 15%;">
 		<img src="img/menbubble.png" alt="a drawing of the website owner, phantasia. they are relaxing on a pile of pillows. greet you by saying: [what a phantasia! welcome to my funky little corner on the internet!!]">
 	</div>
@@ -53,9 +56,9 @@
 	<!-- actual body for text and content LMAO -->
 	<div class="col-xl-11 p-3 mx-auto" style="background-color: #280028;">
 		<div class="row p-2 justify-content-center">
-			<div class="col-md-5 my-3 text-center">
+			<div class="col-md-5 my-3 text-center align-content-center">
 				<div class="d-inline-flex flex-column text-center justify-content-center">
-					<!--um... fix the image sizing issue later...-->
+					<!-- fix it not aligning to the middle properly WAAA -->
 					<img src="img/2023phantasiapfp.png" class="rounded mx-auto d-block" style="width: 90%;" alt="A profile picture of Phantasia's mascot. Her mask is off and she is smiling at the viewer in a 3/4 perspective with her hand raised to her cheek.">
 					<span class="pt-3" style="color: white;">call me phantasia!! or phanta lol</span>
 					<span class="fw-normal" style="font-size: 15px; padding-top: 0.5em;">ne/nim/neir/neirs/nimself, they/her+</span>
@@ -108,10 +111,10 @@
 					<p><span class="ms-4"></span>i redid the site with bootstrap so THEORETICALLY it should look ok on smaller screens but im not gonna optimize this for mobile LOL. that top image of me is never gonna be fixed</p>
 				</div>
 			</div>
-			<div class="col-md-6 m-3 p-3 text-center rounded" style="background-color: #202020;">
-				<div class="d-inline-flex flex-column text-center justify-content-center">
+			<div class="col-md-7 m-3 p-3 text-center fw-normal rounded" style="background-color: #202020; font-size: 14px;">
+				<div class="d-flex text-center justify-content-center">
 					<!-- begin wwww.htmlcommentbox.com --> 
-					<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">guestbook</a> is loading...</div>
+					<div class="flex-grow-1 p-2" id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">guestbook</a> is loading...</div>
 					<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
 					<script type="text/javascript" id="hcb"> 
 						if(!window.hcb_user){hcb_user={comments_header : 'guestbook!!',};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24QxfWqeWDYZ69cEo3ahNSw1"+"&opts=16798&num=10&ts=1685480122830");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); 
@@ -125,40 +128,12 @@
 
 <footer>
 	<div class="col-xl-11 p-1 mt-1 mx-auto" style="background-color: #280028;">
-		<div class="row row-cols-1">
-			<div class="col-11 mt-3 px-5 fw-normal justify-content-center text-center" style="font-family: 'Exo 2', sans-serif; font-size: 12px; margin-left: 4%;">
-				<p style="margin: 0; margin-bottom: 0.5rem;">
-					<a href="#index"><img src="https://file.garden/X_3khxgapBy70O8i/Misc/2023phantabutton.gif" class="justify-content-center" height="31px" width="88px"></a>
-				</p>
-
-				<p style="margin: 0;">socials ordered left-right by use</p>
-				
-				<p style="margin-bottom: 0.1rem;">
-					<a href="https://whataphantasia.tumblr.com/">
-						Tumblr</a> | 
-					<a href="https://twitter.com/WhatAPhantasia">
-						Twitter</a> | 
-					<a href="https://toyhou.se/WhatAPhantasia">
-						Toyhou.se</a> | 
-					<a href="https://www.pinterest.com/WhatAPhantasia/">
-						Pinterest</a> | 
-					<a href="https://www.wattpad.com/user/WhatAPhantasia">
-						Wattpad</a> | 
-					<a href="https://archiveofourown.org/users/WhatAPhantasia">
-						AO3</a> | 
-					<a href="https://www.youtube.com/channel/UC_nTsHvMJym7y0nQNInuL2w">
-						Youtube</a> | 
-					<a href="https://www.twitch.tv/whataphantasia">
-						Twitch</a> | 
-					<a href="https://whataphantasia.itch.io/">
-						Itch.io</a> | 
-					<a href="https://www.instagram.com/whataphantasia/">
-						Instagram</a>
-				</p>
-
-				<p>free icons taken from <a href="https://www.flaticon.com/">Flaticon</a> & <a href="https://fontawesome.com/">Font Awesome!</a></p>
-			</div>
-		</div>
+		<div id="footer-base"></div>
+		<script>
+		$(function(){
+		$("#footer-base").load("footer.html");
+		});
+		</script>
 	</div>
 </footer>
 
