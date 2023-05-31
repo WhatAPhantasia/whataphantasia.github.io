@@ -18,104 +18,31 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+	<!-- JQUERY LOL help -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 	<!--overwrite bootstrap stuff-->
 	<link href="assets/css/bs_main.css" rel="stylesheet">
 	<script src="assets/js/bs_main.js"></script>
 
+	<!--i love exo 2 mwa mwa mwa-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
 </head>
 
 <body>
 	<!-- navbar! -->
-	<nav class="navbar navbar-dark ps-2 p-0 fixed-top" style="background-color: #1a001a; z-index: 3;">
-		<div class="container-fluid">
-
-			<!-- sparkle and header text -->
-			<a class="navbar-brand" href="#index" style="color: #b5a7ba;">
-				<img src="img/masks-theater-solid.svg" alt="home button" width="30" height="30" class="d-inline-block align-text-top" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
-				<div class="d-none d-sm-inline-flex flex-column align-text-top">
-					<span style="font-size: 11px; line-height: 1.2;">what a phantasia!</span>
-					<span style="font-size: 15px; line-height: 1.3;">silly personal website :3</span>
-				</div>
-			</a>
-
-			<div>
-			<!-- button divider -->
-			<div class="align-right" id="navborder"></div>
-			<!-- button shit -->
-			<button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-				<span class="d-none d-md-inline-block align-middle" style="font-size: 15px; color: #b5a7ba;">index</span>
-				<!--<i class="fa-solid fa-ghost fa-lg ml-lg-2 ml-0 align-middle" aria-hidden="true"></i>-->
-				<img src="img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
-			</button>
-			</div>
-
-			<!-- navbar content -->
-			<div class="offcanvas offcanvas-end text-bg-dark" style="background-color: #1a001a;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">navigation!</h5>
-					<button type="button" class="btn btn-default" data-bs-dismiss="offcanvas" aria-label="Close">
-						<img src="img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
-					</button>
-				</div>
-				<div class="offcanvas-body fw-normal" style="color: #b5a7ba; font-family: 'Exo 2', sans-serif;">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-					<!--navigation tab items-->
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#index">
-							home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#aboutme">
-							about me & da site!</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							projects</a>
-						<ul class="dropdown-menu dropdown-menu-dark">
-							<li><a class="dropdown-item" href="#perpro">original works</a></li>
-							<li><a class="dropdown-item" href="#fanpro">fandom works</a></li>
-							<li><a class="dropdown-item" href="#ukagaka">ukagakas</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#coms">
-							commissions</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#portfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							portfolio & art archive</a>
-						<ul class="dropdown-menu dropdown-menu-dark">
-							<li><a class="dropdown-item" href="#2023portfolio">2023 art portfolio</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="#artz">ALL THE ART</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#DA-HOARD" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							webshrines & hoards :3</a>
-						<ul class="dropdown-menu dropdown-menu-dark">
-							<li><a class="dropdown-item" href="#dibshrine">DIB MEMBRANE!! <3</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="#genderz">gender hoard</a></li>
-							<li><a class="dropdown-item" href="#graphicz">graphics hoard</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#links">
-							external links</a>
-					</li>
-				  	</ul>
-				</div>
-
-		</div>
-	</nav>
+	<div id="nav-base"></div>
+	<script>
+	$(function(){
+	$("#nav-base").load("nav.html");
+	});
+	</script>
 	<!-- navbar! -->
 
 	<div id="background_wrap"></div>
 	
 	<!-- the toplights get their own css id because! vw cant be set up w html </3 -->
-	<div id="toplights" style="top: 35px;"><img src="img/stringlights.png"></div>
+	<div id="toplights" style="top: 45px;"><img src="img/stringlights.png"></div>
 
 	
 	<!-- top image -->
@@ -136,23 +63,31 @@
 				</div>
 			</div>
 			<div class="col-md-5 my-3 text-center">
-				<div class="d-grid gap-3">
+				<div class="d-grid gap-2">
 					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
 						about me & da site!</button>
+					<p class="fw-normal m-0" style="font-size: 12px; font-family: 'Exo 2', sans-serif;">
+						watch me ramble abt myself (also has dni/byf and social linkss)</p>
 					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
 						projects</button>
+					<p class="fw-normal m-0" style="font-size: 12px; font-family: 'Exo 2', sans-serif;">
+						fictional stories, series, games, etc that i make :3c</p>
 					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
 						commissions</button>
+					<p class="fw-normal m-0" style="font-size: 12px; font-family: 'Exo 2', sans-serif;">
+						please give me money im begging you</p>
 					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
 						portfolio & art archive</button>
+					<p class="fw-normal m-0" style="font-size: 12px; font-family: 'Exo 2', sans-serif;">
+						sorted by date and subject!! very WIP rn tho</p>
 					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
 						webshrines & hoards :3</button>
+					<p class="fw-normal m-0" style="font-size: 12px; font-family: 'Exo 2', sans-serif;">
+						I LOVE MAKING SITES 4 MY BLORBOS N HOARDING BLINKIES</p>
 					<button type="button" class="btn btn-dark py-2" style="font-size: 20px; width: 100%;">
 						external links</button>
-					<!-- i,,, think i can put my social links here too LOL -->
-					<div class="d-inline-flex">
-						<p>ok nvm this space is for badges and stuff (IF ONLY I HAD ANY)</p>
-					</div>
+					<p class="fw-normal m-0" style="font-size: 12px; font-family: 'Exo 2', sans-serif;">
+						graphics + website resources and cool ppl!! X3</p>
 				</div>
 			</div>
 		</div>
@@ -166,20 +101,20 @@
 				</figcaption>
 			</div>
 		</div>
-		<div class="row row-cols-2 p-2 justify-content-center">
-			<div class="col-md-5 m-3">
+		<div class="row p-2 justify-content-center">
+			<div class="col-md-3 m-3">
 				<div class="d-inline-flex flex-column justify-content-center fw-normal" style="font-family: 'Exo 2', sans-serif;">
-					<p><span class="ms-4"></span>hey what's up gamers!!!! this site is a BIG work in progress and i know WAY less abt html and css than i think i do!! i'll ramble more about da site and me in the first button up there but here i will say <mark style="background: #7b6317; color: #cccccc;">SIGN MY GUESTBOOK</mark> to the right and leave ur thoughts abt da site!!!!</p>
-					<p><span class="ms-4"></span>i just redid the site with bootstrap so THEORETICALLY it should look ok on smaller screens but im not gonna optimize this for mobile LOL. that top image of me is never gonna be fixed</p>
+					<p><span class="ms-4"></span>hey what's up gamers!!!! this site is a BIG work in progress and i know WAY less abt html and css than i think i do!! i'll ramble more about da site and me in the first button up there but here i will say <mark style="background: #7b6317; color: #cccccc;">SIGN MY GUESTBOOK</mark> and leave ur thoughts abt da site!!!! drop a nice story! tell me u were here :3</p>
+					<p><span class="ms-4"></span>i redid the site with bootstrap so THEORETICALLY it should look ok on smaller screens but im not gonna optimize this for mobile LOL. that top image of me is never gonna be fixed</p>
 				</div>
 			</div>
-			<div class="col-md-5 m-3 p-3 text-center rounded" style="background-color: #373737;">
+			<div class="col-md-6 m-3 p-3 text-center rounded" style="background-color: #202020;">
 				<div class="d-inline-flex flex-column text-center justify-content-center">
 					<!-- begin wwww.htmlcommentbox.com --> 
 					<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">guestbook</a> is loading...</div>
 					<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-					<script type="text/javascript" id="hcb"> /*<!--*/ 
-						if(!window.hcb_user){hcb_user={comments_header : 'guestbook!!',};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24QxfWqeWDYZ69cEo3ahNSw1"+"&opts=16798&num=10&ts=1685480122830");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})();  /*--*/ 
+					<script type="text/javascript" id="hcb"> 
+						if(!window.hcb_user){hcb_user={comments_header : 'guestbook!!',};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24QxfWqeWDYZ69cEo3ahNSw1"+"&opts=16798&num=10&ts=1685480122830");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); 
 					</script>
 					<!-- end www.htmlcommentbox.com -->
 				</div>
@@ -192,9 +127,13 @@
 	<div class="col-xl-11 p-1 mt-1 mx-auto" style="background-color: #280028;">
 		<div class="row row-cols-1">
 			<div class="col-11 mt-3 px-5 fw-normal justify-content-center text-center" style="font-family: 'Exo 2', sans-serif; font-size: 12px; margin-left: 4%;">
+				<p style="margin: 0; margin-bottom: 0.5rem;">
+					<a href="#index"><img src="https://file.garden/X_3khxgapBy70O8i/Misc/2023phantabutton.gif" class="justify-content-center" height="31px" width="88px"></a>
+				</p>
+
 				<p style="margin: 0;">socials ordered left-right by use</p>
 				
-				<p>
+				<p style="margin-bottom: 0.1rem;">
 					<a href="https://whataphantasia.tumblr.com/">
 						Tumblr</a> | 
 					<a href="https://twitter.com/WhatAPhantasia">

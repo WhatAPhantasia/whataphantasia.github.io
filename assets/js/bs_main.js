@@ -4,6 +4,6 @@ window.addEventListener("scroll",function() {
        document.getElementById("toplights").style.top = "-10px";
     }
     else {
-       document.getElementById("toplights").style.top = "50px";
+       document.getElementById("toplights").style.top = "45px";
     }
  },false);
