@@ -17,3 +17,15 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
+
+h1, h2
+h3, h4
+h5, h6
+.h1, .h2
+.h3, .h4
+.h5, .h6 {
+  all: initial;
+  * {
+    all: unset;
+  }
+}
