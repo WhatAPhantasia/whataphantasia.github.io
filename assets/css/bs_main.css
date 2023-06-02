@@ -29,7 +29,15 @@ a:hover, a:active {
 	color: #e4cfb3;
 }
 
-
+/* YES im default styling all headers. i do what i want*/
+h1, h2
+h3, h4
+h5, h6
+.h1, .h2
+.h3, .h4
+.h5, .h6 {
+	all: unset;
+}
 
 
 body {
