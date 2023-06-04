@@ -39,6 +39,9 @@ h5, h6
 	all: unset;
 }
 
+.userbox {
+	margin: auto 0.5em 0.5em;
+}
 
 body {
 	/*background-image: url("img/bg1.png");*/
