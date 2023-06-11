@@ -1,11 +1,12 @@
 <!-- this one has a different nav because..! the style of the page is completely different ooooooh -->
 
-<nav class="navbar ps-2 p-0 fixed-top" style="background-color: #9f99a1; z-index: 3;">
+
+<nav class="navbar navbar-dark ps-2 p-0 fixed-top" style="background-color: #1a001a; z-index: 3;">
     <div class="container-fluid">
 
         <!-- sparkle and header text -->
-        <a class="navbar-brand" href="/index" style="color: black;">
-            <img src="https://whataphantasia.github.io/img/masks-theater-solid.svg" alt="home button" width="30" height="30" class="d-inline-block align-text-top" style="filter: grayscale(100%) brightness(5%);">
+        <a class="navbar-brand" href="/index" style="color: #b5a7ba;">
+            <img src="https://whataphantasia.github.io/img/masks-theater-solid.svg" alt="home button" width="30" height="30" class="d-inline-block align-text-top" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
             <div class="d-none d-sm-inline-flex flex-column align-text-top">
                 <span style="font-size: 11px; line-height: 1.2;">what a phantasia!</span>
                 <span style="font-size: 15px; line-height: 1.3;">ukagakas & desktop sillies</span>
@@ -17,13 +18,104 @@
         <div class="align-right" id="navborder"></div>
         <!-- button shit -->
         <button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="d-none d-md-inline-block align-middle" style="font-size: 15px; color: black;">index</span>
+            <span class="d-none d-md-inline-block align-middle" style="font-size: 15px; color: #b5a7ba;">index</span>
             <!--<i class="fa-solid fa-ghost fa-lg ml-lg-2 ml-0 align-middle" aria-hidden="true"></i>-->
-            <img src="https://whataphantasia.github.io/img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: grayscale(100%) brightness(5%);">
+            <img src="https://whataphantasia.github.io/img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
         </button>
         </div>
 
         <!-- navbar content -->
+        <div class="offcanvas offcanvas-end text-bg-dark" style="background-color: #1a001a;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">navigation!</h5>
+                <button type="button" class="btn btn-default" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="https://whataphantasia.github.io/img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: invert(74%) sepia(5%) saturate(835%) hue-rotate(239deg) brightness(94%) contrast(83%);">
+                </button>
+            </div>
+            <div class="offcanvas-body fw-normal" style="color: #b5a7ba; font-family: 'Exo 2', sans-serif;">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <!--navigation tab items-->
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index">
+                        home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/aboutme" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        about me & da site!</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/aboutme">who are you?!</a></li>
+                        <li><a class="dropdown-item" href="/aboutme#whichphanta">which one is phantasia?!</a></li>
+                        <li><a class="dropdown-item" href="/aboutme#socials">socials!</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        projects</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/projects#personal">original works</a></li>
+                        <li><a class="dropdown-item" href="/projects#fandom">fandom works</a></li>
+                        <li><a class="dropdown-item" href="/projects/ukagaka">ukagakas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/coms">
+                        commissions</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/arthub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        portfolio & art archive</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/arthub/2023portfolio">2023 art portfolio</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/arthub/DUMP">ALL THE ART</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/DA-HOARD" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        webshrines & hoards :3</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/DA-HOARD/dibshrine">DIB MEMBRANE!! <3</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/DA-HOARD/genderz">gender hoard</a></li>
+                        <li><a class="dropdown-item" href="/DA-HOARD/graphicz">graphics hoard</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/links">
+                        external links</a>
+                </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!--
+    nvm i hate the light theme AIWJDAOIWJD gimme a sec
+<nav class="navbar ps-2 p-0 fixed-top" style="background-color: #9f99a1; z-index: 3;">
+    <div class="container-fluid">
+
+        sparkle and header text
+        <a class="navbar-brand" href="/index" style="color: black;">
+            <img src="https://whataphantasia.github.io/img/masks-theater-solid.svg" alt="home button" width="30" height="30" class="d-inline-block align-text-top" style="filter: grayscale(100%) brightness(5%);">
+            <div class="d-none d-sm-inline-flex flex-column align-text-top">
+                <span style="font-size: 11px; line-height: 1.2;">what a phantasia!</span>
+                <span style="font-size: 15px; line-height: 1.3;">ukagakas & desktop sillies</span>
+            </div>
+        </a>
+
+        <div>
+        button divider
+        <div class="align-right" id="navborder"></div>
+        button shit
+        <button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="d-none d-md-inline-block align-middle" style="font-size: 15px; color: black;">index</span>
+            <img src="https://whataphantasia.github.io/img/ghost-solid.svg" alt="sparkle icon" width="28" height="28" class="d-inline-block ml-lg-2 ml-0 p-0 align-middle" style="filter: grayscale(100%) brightness(5%);">
+        </button>
+        </div>
+
+        navbar content
 
         <div class="offcanvas offcanvas-end" style="background-color: #9f99a1;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
@@ -34,10 +126,10 @@
             </div>
             <div class="offcanvas-body fw-normal" style="color: black; font-family: 'Exo 2', sans-serif;">
 
-            <!-- UPDATE MASTER NAV CONTENT FIRST, THEN COPY PASTE TO HERE. DON'T DELETE BACKGROUND COLOR/ICON ABOVE, OR TEXT COLOR BELOW. -->
+            UPDATE MASTER NAV CONTENT FIRST, THEN COPY PASTE TO HERE. DON'T DELETE BACKGROUND COLOR/ICON ABOVE, OR TEXT COLOR BELOW.
 
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <!--navigation tab items-->
+                navigation tab items
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/index">
                         home</a>
@@ -89,9 +181,10 @@
                 </li>
                   </ul>
 
-                <!-- end of copy paste section. -->
+                end of copy paste section.
 
             </div>
         </div>
     </div>
 </nav>
+-->

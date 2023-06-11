@@ -57,4 +57,5 @@ a:hover, a:active {
 
 .btn {
     font-family: 'Courier New', monospace;
+    color: rgb(200, 200, 200);
 }
