@@ -1,0 +1,12 @@
+REMEMBER:
+    - if you add a new page, remember to update EVERY nav.html. currently, one can be found in the root directory and under /projects/ukagaka/.
+
+TODO:
+    - add head metadata for image..?
+    - finish ukgk page :3
+    - make thumbnails for /projects
+    - add alt text + make everything accessible
+    - make and finish commision page
+    - make and finish arthub (omfg)
+    - make and finish webshrines and hoards... sigh...
+    - merge commits... eventually O_O;;
