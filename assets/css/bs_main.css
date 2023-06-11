@@ -75,7 +75,9 @@ body {
 	line-height: 1.6;
 	color: #b5a7ba;
 }
-#background_wrap {
+/*huh i think this might be a better alternative than background wrap LOL*/
+body::before {
+	content: '';
 	z-index: -1;
 	position: fixed;
 	top: 0;
@@ -88,6 +90,20 @@ body {
 	background-repeat: no-repeat;
 	text-align: center;
 }
+/*
+#background_wrap {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url("img/bg1.png");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	text-align: center;
+}*/
 
 #navborder {
 	position: absolute;
