@@ -138,4 +138,15 @@ body::before {
   background-color: #1b1b1b;
 }
 
+/*not sure if i want this in main but we stay silly*/
+section.active {
+	display: block;
+	transition: opacity 0.5s ease-in-out 0.25s, min-height 0.25s ease-in-out, max-height 0.25s ease-in-out;
+}
+section.inactive {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+
 /*what*/

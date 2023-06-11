@@ -36,4 +36,25 @@ body {
 body::before {
     background-image: url("img/grid.svg");
     background-repeat: repeat;
+    background-size: 65px;
+}
+
+#navborder {
+	position: absolute;
+	border-left: 1.6px solid #000000;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 48%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* unvisited link and visited link */
+a:link, a:visited {
+	color: purple;
+}
+
+/* mouse over link and selected link */
+a:hover, a:active {
+	color: rgb(187, 87, 187);
+}
+
+.btn {
+    font-family: 'Courier New', monospace;
 }
