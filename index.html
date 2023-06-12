@@ -32,14 +32,12 @@
 
 <body>
 	<!-- navbar! -->
-	<!-- testing out a non jquery solution? -->
+	<!-- im actually not sure if jquery is... the best solution to this? its not the most reliable method for doing this,, -->
 	<div id="nav-base"></div>
 	<script>
-	function load_page(){
-	qr=new XMLHttpRequest();
-	qr.open('get','nav.html');
-	qr.send();
-	};load_page();
+	$(function(){
+	$("#nav-base").load("nav.html");
+	});
 	</script>
 	<!-- navbar! -->
 	
