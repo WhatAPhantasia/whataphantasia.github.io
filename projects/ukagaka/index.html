@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
 
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/assets/js/hashcollapse.js"></script>
 
 	<link href="/assets/css/bs_main.css" rel="stylesheet">
     <link href="/assets/css/bs_ukgk.css" rel="stylesheet">
@@ -32,14 +33,13 @@
 	<div id="nav-base"></div>
 	<script>
 	$(function(){
-	$("#nav-base").load("nav.html");
+	$("#nav-base").load("/projects/ukagaka/nav.html");
 	});
 	</script>
 	<!-- navbar! -->
 
     <div class="col-xl-11 p-3 mb-1 mx-auto rounded" style="background-color: #bfbfbf; margin-top: 100px;">
-        <section id="home" class="active">
-        <div class="row p-3 pb-0 justify-content-center">
+        <div class="row p-3 justify-content-center">
             <div class="col-md-6 align-content-center">
                 <div class="d-flex justify-content-center align-items-center text-center">
                     <div class="px-1" style="line-height: 1; margin-bottom: 0;">
@@ -57,12 +57,15 @@
                     <p class="text-center" style="font-size: 0.8em; color: gray;">(as a LEGAL disclaimer, i am not gaining money or whatever from these! some are inspired by media properties that aren't mine and i give the proper credit! the art and ghosts themselves are made by me, and they are derivative works :3)</p>
 
                     <div class="text-center">
-                        <a href="#ghosts" role="button" class="btn btn-dark col-5 py-2 m-1" style="background-color: blueviolet;">
-                            Ghosts</a>
-                        <a href="#extras" role="button" class="btn btn-dark col-5 py-2 m-1" style="background-color: blueviolet;">
-                            Extras</a>
-                        <a href="#misc" role="button" class="btn btn-dark col-5 py-2 m-1" style="background-color: blueviolet;">
-                            Miscellaneous</a>
+                        <a href="/projects/ukagaka/ghosts/">
+                            <button type="button" class="btn col-5 py-2 m-1" style="background-color: rgb(90, 0, 90);">
+                                Ghosts</button></a>
+                        <a href="/projects/ukagaka/extra/">
+                            <button type="button" class="btn col-5 py-2 m-1" style="background-color: rgb(90, 0, 90);">
+                                Extras</button></a>
+                        <a href="/projects/ukagaka/misc/">
+                            <button type="button" class="btn col-5 py-2 m-1" style="background-color: rgb(90, 0, 90);">
+                                Miscellaneous</button></a>
                     </div>
                 </div>
             </div>
@@ -77,17 +80,6 @@
                 <script async src="https://ukagakawebring.netlify.com//embed.js" charset="utf-8"></script>
             </div>
 		</div>
-        </section>
-        <section id="ghosts" class="inactive">
-        <div class="row p-3 pb-0 justify-content-center">
-            <div class="col-3">
-                i'm waaaaaaaay too tired to continue this so i'm just gonna stop here LOL. brb in the morning ^U^/
-            </div>
-        </div>
-        </section>
-        <section id="misc" class="inactive">
-
-        </section>
     </div>
 </body>
 
