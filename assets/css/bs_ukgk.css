@@ -8,20 +8,13 @@ body::before {
     background-size: 65px;
 }
 
-a:link, a:visited {
-	color: purple;
-}
-a:hover, a:active {
-	color: rgb(187, 87, 187);
-}
-.nav a:link,
-.nav a:visited {
-    color: #f7c420;
-}
-.nav a:hover,
-.nav a:active {
-	color: #e4cfb3;
-}
+a:link, a:visited {color: purple;}
+a:hover, a:active {color: rgb(187, 87, 187);}
+
+a.nav-item:link,
+a.nav-item:visited {color: #f7c420;}
+a.nav-item:hover,
+a.nav-item:active {color: #e4cfb3;}
 
 .btn {
     font-family: 'Courier New', monospace;
@@ -29,6 +22,7 @@ a:hover, a:active {
     color: rgb(200, 200, 200);
 }
 
-.btn-outline-dark {
-    color: unset;
-}
+.btn-outline-dark:link,
+.btn-outline-dark:visited {color: black;}
+.btn-outline-dark:hover,
+.btn-outline-dark:active {color: white;}
