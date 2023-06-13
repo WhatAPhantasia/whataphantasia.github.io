@@ -1,5 +1,6 @@
 body {
     color: black;
+    background-color: #7c3f88;
     font-family: 'Exo 2', sans-serif;
 }
 body::before {
