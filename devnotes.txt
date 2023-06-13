@@ -1,5 +1,6 @@
 REMEMBER:
     - if you add a new page, remember to update EVERY nav.html. currently, one can be found in the root directory and under /projects/ukagaka/.
+    - you have to manually update head metadata too....... sorry.........
 
 TODO:
     - add head metadata for image..?

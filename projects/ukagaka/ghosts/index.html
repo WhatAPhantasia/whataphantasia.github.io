@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!-- im in so much fucking pain right now -->
+
+<html lang="en">
+<head>
+	<title>phantasia's ukagaka hub!</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="phantasia's ukagaka hub!"/>
+	<meta property="og:description" content="download and info hub for ukagaka content and desktop toys that phantasia makes!"/>
+	<meta property="og:url" content="https://whataphantasia.github.io/projects/ukagaka/ghosts/"/>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<link href="/assets/css/bs_main.css" rel="stylesheet">
+    <link href="/assets/css/bs_ukgk.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar! -->
+	<div id="nav-base"></div>
+	<script>
+	$(function(){
+	$("#nav-base").load("/projects/ukagaka/nav.html");
+	});
+	</script>
+	<!-- navbar! -->
+
+    <!--tbh i WANT it to only change when mousing over the image and not the button, feels nice? like an easter egg hehe-->
+    <!--saving this here in case i feel like it :3c https://stackoverflow.com/questions/12400633/change-image-on-mouseover-for-a-button-on-another-div-->
+    <style>
+        img {
+            background-color: black;
+            background-image: url("/img/darkfleurs.jpg");
+            background-repeat: repeat;
+        }
+        #ft:hover {content: url('/img/ukgk/ft_icon2.png');}
+        #lumi:hover {content: url('/img/ukgk/lumi_icon2.png')}
+        #zzz:hover {content: url('/img/ukgk/zzz_icon2.png');}
+    </style>
+
+    <div class="col-xl-11 p-3 mb-1 mx-auto rounded" style="background-color: #bfbfbf; margin-top: 100px;">
+        <div class="row p-3 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center align-items-center text-center">
+                <div class="px-1" style="line-height: 1; margin-bottom: 0.5rem;">
+                    <img src="/img/decome_witchghost.gif"></div>
+                <div class="px-1">
+                    <h1 id="ghosts" style="font-family: 'Courier New', monospace; font-size: 42px; line-height: 1; font-weight: bold; font-variant: small-caps; margin-bottom: 0;">
+                    Ghosts!</h1></div>
+                <div class="px-1" style="line-height: 1; margin-bottom: 0.5rem;">
+                    <img src="/img/decome_witchghost.gif"></div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4 col-md-2 text-center">
+                <a href="/projects/ukagaka/"><button type="button" class="btn btn-outline-dark w-100 m-0">Back</button></a>
+            </div>
+        </div>
+
+        <!-- i HATE how col-12 looks but uhmmmmmm i hate how the buttons overflow on smaller screens even MORE-->
+        
+        <div class="row p-3 justify-content-center">
+            <h2 id="released" class="text-center fw-bold" style="font-family: 'Courier New', monospace; font-size: 36px; line-height: 1; font-variant: small-caps;">
+            released</h2>
+
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/faeia-and-tahir">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    Faeia & Tahir</button></a>
+                <img src="/img/ukgk/ft_icon1.png" id="ft" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/stormbringer">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    sNO - STORMBRINGER!!</button></a>
+                <img src="/img/ukgk/lumi_icon1.png" id="lumi" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/zzzzzzzzz">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    zzzzzzzzz</button></a>
+                <img src="/img/ukgk/zzz_icon1.png" id="zzz" class="my-2 img-fluid rounded">
+            </div>
+
+            <p class="text-center mb-0"><img src="/img/divider_starline.png" class="img-fluid"></p>
+		</div>
+
+        <div class="row px-3 justify-content-center">
+            <h2 id="wip" class="text-center fw-bold" style="font-family: 'Courier New', monospace; font-size: 36px; line-height: 1; font-variant: small-caps;">
+            work in progress</h2>
+
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/vera">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    an ending - vera</button></a>
+                <img src="/img/ukgk/vera_icon1.png" id="vera" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/dib">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    Shooting Star Dib</button></a>
+                <img src="/img/ukgk/dib_icon1.png" id="dib" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/ely">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    Shooting Star Ely</button></a>
+                <img src="/img/ukgk/ely_icon1.png" id="ely" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/ari-and-stan">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    Ari & Stan</button></a>
+                <img src="/img/ukgk/btm_icon1.png" id="btm" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/snatcher">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    AHIT Snatcher</button></a>
+                <img src="/img/ukgk/snt_icon1.png" id="snt" class="my-2 img-fluid rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/fritzy">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    Fritzy</button></a>
+                <img src="/img/ukgk/frit_icon1.png" id="frit" class="my-2 img-fluid rounded">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<footer>
+	<div class="col-xl-11 p-1 mt-1 mx-auto rounded" style="background-color: #bfbfbf; margin-bottom: 25px;">
+		<div id="footer-base"></div>
+		<script>
+		$(function(){
+		$("#footer-base").load("/footer.html");
+		});
+		</script>
+	</div>
+</footer>
