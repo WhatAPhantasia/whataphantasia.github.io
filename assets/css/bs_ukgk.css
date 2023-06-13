@@ -14,12 +14,12 @@ a:link, a:visited {
 a:hover, a:active {
 	color: rgb(187, 87, 187);
 }
-.nav-link a:link,
-.nav-link a:visited {
+.nav a:link,
+.nav a:visited {
     color: #f7c420;
 }
-.nav-link a:hover,
-.nav-link a:active {
+.nav a:hover,
+.nav a:active {
 	color: #e4cfb3;
 }
 
@@ -27,4 +27,8 @@ a:hover, a:active {
     font-family: 'Courier New', monospace;
     text-decoration: none;
     color: rgb(200, 200, 200);
+}
+
+.btn-outline-dark {
+    color: unset;
 }
