@@ -3,8 +3,7 @@ REMEMBER:
     - you have to manually update head metadata too....... sorry.........
 
 TODO:
-    - add head metadata for image..?
-    - finish ukgk page :3
+    - eventually download and self-host bootstrap + jquery :Vc
     - make thumbnails for /projects
     - add alt text + make everything accessible
     - make and finish commision page
