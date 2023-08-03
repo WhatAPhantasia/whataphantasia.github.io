@@ -6,7 +6,8 @@ TODO:
     - eventually download and self-host bootstrap + jquery :Vc
     - make thumbnails for /projects
     - add alt text + make everything accessible
-    - make and finish commision page
-    - make and finish arthub (omfg)
+    - finish commision page
+    - finish arthub (omfg)
+        - find a gallery html code to use....
     - make and finish webshrines and hoards... sigh...
     - merge commits... eventually O_O;;
