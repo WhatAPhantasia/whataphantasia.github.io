@@ -36,13 +36,18 @@
 
     <!--tbh i WANT it to only change when mousing over the image and not the button, feels nice? like an easter egg hehe-->
     <!--saving this here in case i feel like it :3c https://stackoverflow.com/questions/12400633/change-image-on-mouseover-for-a-button-on-another-div-->
+            <!-- class="my-2 w-100 rounded" -->
     <style>
-        #ft, #lumi, #zzz, #vera,
-        #dib, #ely, #btm, #snt,
-        #frit {
+        #ft::before, #lumi::before, #zzz::before, #vera::before,
+        #dib::before, #ely::before, #btm::before, #snt::before,
+        #frit::before, #tnm::before {
             background-color: white;
             background-image: url("/img/bg_lavchk.gif");
             background-repeat: repeat;
+            border-radius: 0.375rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
         }
         #ft:hover {content: url('/img/ukgk/ft_icon2.png');}
         #lumi:hover {content: url('/img/ukgk/lumi_icon2.png')}
@@ -53,6 +58,7 @@
         #btm:hover {content: url('/img/ukgk/btm_icon2.png');}
         #snt:hover {content: url('/img/ukgk/snt_icon2.png');}
         #frit:hover {content: url('/img/ukgk/frit_icon2.png');}
+        #tnm:hover {content: url('/img/ukgk/tnm_icon2.png');}
     </style>
 
     <div class="col-xl-11 p-3 mb-1 mx-auto rounded" style="background-color: #bfbfbf; margin-top: 100px;">
@@ -135,19 +141,17 @@
                 <img src="/img/ukgk/snt_icon1.png" id="snt" class="my-2 w-100 rounded">
             </div>
             <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
+                <a href="/projects/ukagaka/ghosts/tea-and-mirror">
+                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
+                    Lady Tea & Master Mirror</button></a>
+                <img src="/img/ukgk/tnm_icon1.png" id="tnm" class="my-2 w-100 rounded">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
                 <a href="/projects/ukagaka/ghosts/fritzy">
                 <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
                     Fritzy</button></a>
                 <img src="/img/ukgk/frit_icon1.png" id="frit" class="my-2 w-100 rounded">
             </div>
-            <!--
-            <div class="col-12 col-sm-6 col-md-3 mb-4 text-center">
-                <a href="/projects/ukagaka/ghosts/fritzy">
-                <button type="button" class="btn btn-dark py-2 px-0 w-100" style="background-color: rgb(90, 0, 90);">
-                    Luna's Arboretum</button></a>
-                <img src="/img/ukgk/frit_icon1.png" id="frit" class="my-2 w-100 rounded">
-            </div>
-            -->
         </div>
 
     </div>
