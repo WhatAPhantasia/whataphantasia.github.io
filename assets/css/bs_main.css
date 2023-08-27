@@ -151,4 +151,28 @@ body::before {
 	transition: opacity 0.25s ease-in-out;
 }
 
+#thinky {
+	border: 20px solid transparent;
+	border-image: url("img/border_think.png") 45 round;
+}
+
+/*statuscafe stuff*/
+#statuscafe {
+    padding: .3em;
+	color: black;
+	background-color: #bfbfbf;
+}
+#statuscafe a:link, #statuscafe a:visited {color: purple;}
+#statuscafe a:hover, #statuscafe a:active {color: #bb57bb;}
+#statuscafe::before {
+	background-color: #bfbfbf;
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
 /*what*/
