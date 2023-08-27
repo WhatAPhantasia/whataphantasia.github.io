@@ -134,7 +134,7 @@
 .c-comment {
     margin-bottom: 15px;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid gray;
     background-color: #2D0B52; 
 }
 .c-reply {
@@ -144,7 +144,7 @@
     margin-left: auto;
     margin-right: 0;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid gray;
     background-color: #2D0B52; 
 }
 .c-reply:last-child {margin-bottom: 0;}
