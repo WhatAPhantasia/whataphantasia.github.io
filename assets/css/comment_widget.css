@@ -57,10 +57,10 @@
 #c_widget {
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
     overflow: auto;
-    padding: 20px;
     font-family: 'Courier New';
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
@@ -72,16 +72,16 @@
     text-transform: uppercase;
     background-color: black;
     color: #B766FF;
-    border: 1px solid white;
+    border: 1px solid gray;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
-    color: white;
+    color: gray;
     border: 1px solid #B766FF;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
     color: #B766FF;
-    border: 1px solid white;
+    border: 1px solid gray;
 }
 
 /* Input section */
@@ -89,7 +89,7 @@
     margin-bottom: 15px;
     padding: 10px;
     background-color: black;
-    border: 2px solid white;
+    border: 2px solid gray;
 }
 
 #c_widgetTitle {
