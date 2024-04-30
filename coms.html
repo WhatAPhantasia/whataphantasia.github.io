@@ -52,9 +52,8 @@
 
         <div class="row p-3 py-0 justify-content-center align-items-center">
             <div class="col-12 col-md-5 mx-1 fw-normal text-center" style="font-family: 'Exo 2', sans-serif; word-wrap: break-word;">
-				<p>currently, my commissions are <strong>CLOSED!</strong></p>
-                <p>also i know my terms of service may seem intimidating, but that's just because this has to do with money and services so i have to be strict yk? i'm totally down to discuss whatever abt the process and refunds are totally chill before i've made the final.</p>
-                <p>both this page and my payment methods are still a work in progress. i will update the page at any time if my terms change!</p>
+				<p><strong>check the trello board for availability!</strong></p>
+                <p>the trello board will also have the number of slots available and stuff. refunds are fine until i've shown you a finalized piece to be reviewed for finishing touches.</p>
             </div>
             <div class="col-12 col-md-4 mx-1 fw-normal text-center" style="font-family: 'Exo 2', sans-serif; word-wrap: break-word;">
 				<table class="table table-dark fw-normal">
@@ -80,30 +79,22 @@
                     <img src="img/decome_star.gif"></div>
             </div>
 
-            <div class="col-10 col-sm-5 col-md-3 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
+            <div class="col-10 col-sm-4 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
                 <h3 class="fw-bold" style="font-size: 20px;">WILL DO:</h3>
                 <ul class="mb-0" style="font-size: 14px;">
-                    <li>OCs, fanart, OC x canon!</li>
-                    <li>any body type</li>
-                    <li>humans, furries, animals, mobians, mlp!</li>
-                    <li>cartoon + candy + minor gore</li>
+                    <li>OCs, fanart, ships, OC x canon! PLEASE</li>
+                    <li>any body type 💥💥</li>
+                    <li>humans, furries, animals, aliens...</li>
+                    <li>cartoon + candy + regular ol' gore</li>
                 </ul>
             </div>
-            <div class="col-10 col-sm-5 col-md-3 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
-                <h3 class="fw-bold" style="font-size: 20px;">ASK:</h3>
-                <ul class="mb-0" style="font-size: 14px;">
-                    <li>mecha</li>
-                    <li>vehicles</li>
-                    <li>body horror</li>
-                    <li>anthro birds are my weakness...</li>
-                </ul>
-            </div>
-            <div class="col-10 col-md-3 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
+            <div class="col-10 col-sm-4 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
                 <h3 class="fw-bold" style="font-size: 20px;">WON'T DO:</h3>
                 <ul class="mb-0" style="font-size: 14px;">
-                    <li>nsfw (obvi)</li>
-                    <li>hateful content</li>
-                    <li>explicit gore</li>
+                    <li>any other nsfw + kink (obvi)</li>
+                    <li>mega explicit gore</li>
+                    <li>illegal pairings</li>
+                    <li>ilicit drugs</li>
                 </ul>
             </div>
             <div class="col-10 col-sm-5 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
@@ -111,15 +102,20 @@
                 <ul class="mb-0" style="font-size: 14px;">
                     <li>i keep the right to refuse any commission.</li>
                     <li>personal use only unless otherwise discussed.</li>
-                    <li>no alteration of any kind without permission, please!</li>
+                    <li>no alteration of any kind without permission, please! (NO AI, NFT, ETC)</li>
                     <li>i will keep you updated through the process for any adjustments!</li>
-                    <li>pay half up front, half once final is approved. once final is approved, there are no refunds.</li>
+                    <li>pay 100% upfront once sketch is approved (been burned too many times)</li>
                 </ul>
             </div>
             <div class="col-10 col-sm-4 m-3 p-3 d-flex flex-column rounded" style="background-color: black;">
                 <h3 class="fw-bold" style="font-size: 20px;">ORDER BY:</h3>
-                <ul class="mb-0" style="font-size: 14px;">
-                    <li>TBA!</li>
+                <ul class="mb-0" style="font-size: 14px; font-weight: normal;">
+                    <li>DM me through <strong>Discord! @whataphantasia</strong></li>
+                    <ul><li>be UPFRONT when asking 4 a comm.</li></ul>
+                    <li class="list-unstyled"><hr class="hr"></li>
+                    <li><strong>CASHAPP</strong> (priority, US/UK only)</li>
+                    <li><strong>PAYPAL INVOICE</strong> (for people I trust!)</li>
+                    <li>no robux/nitro rn (tight on money)</li>
                 </ul>
             </div>
             <p class="text-center mb-0"><img src="img/divider_starline.png" class="img-fluid"></p>
@@ -136,8 +132,216 @@
                     <img src="img/decome_star.gif"></div>
             </div>
 
-            <div class="col-11 m-2 fw-normal text-center" style="font-family: 'Exo 2', sans-serif; word-wrap: break-word;">
-                huh. looks like i'm gonna have to work on this section oopsies
+            <!-- i'm putting styling here because clean code is a myth in this god forsaken place -->
+            <!-- https://stackoverflow.com/questions/73561420/how-to-make-images-the-same-height-in-a-bootstrap-5-carousel -->
+            <style>
+                #tallguys {
+                height: 0;
+                padding-bottom: 105%; /* this sets carousel aspect ratio */
+                }
+
+                #wideguys {
+                height: 0;
+                padding-bottom: 80%; /* this sets carousel aspect ratio */
+                }
+
+                .carousel-item {
+                position: absolute !important; /* Bootstrap is insistent */
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                }
+
+                .carousel-item img {
+                height: 100%; /* Bootstrap handles width already */
+                object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+                overflow: hidden;
+                }
+
+                #txtborder {
+                color: white;
+                text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+                1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+                }
+            </style>
+
+            <div class="col-12 my-2">
+                
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-10 p-0 m-3 d-flex flex-column rounded" style="background-color: black;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-7 text-center">
+                                <div id="carouselnormalstyle" class="carousel slide carousel-fade">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselnormalstyle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselnormalstyle" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselnormalstyle" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselnormalstyle" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselnormalstyle" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                      </div>
+                                    <div id="tallguys" class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://64.media.tumblr.com/7a4046902cb3c290b3ba901c1b612318/14ed278fd54dd385-cd/s1280x1920/8ba21a72dacb5094de82420f69abcac83200a61b.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>1 Character Rendered Halfbody. Complex Background. $30.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://64.media.tumblr.com/3164e996db75b4df640f14cb2bb84abe/356a24fb878678de-55/s1280x1920/f8f6ddb5881e44c6318f3d7f58fbd18625c7c1d7.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>2 Character Rendered Fullbody. Complex Background. $35.<br>(Open image in new tab for full!<br>This was free fanart for an OC!)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/56797232_DGENQZU3j7GajiO.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>4 Character Rendered Fullbody. Complex Background. $45.<br>(Open image in new tab for full!)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://64.media.tumblr.com/bf301d2b715df1b759122c6e3b356dcb/4d406dbbfaa842b3-5e/s1280x1920/7e2d1f64f022472038b20467741bd6df2066e679.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>2 Character Rendered Fullbody. Simple Background. $25.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://file.garden/X_3khxgapBy70O8i/toyhouse/lumijuney.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>2 Character Line Fullbody. Simple Background. $10.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselnormalstyle" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselnormalstyle" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5 p-4 fw-normal" style="font-family: 'Exo 2', sans-serif;">
+                                <h2 id="normal" class="fw-bold">Normal Style™</h2>
+                                <ul>
+                                    <li class="list-unstyled"><b>SHOULDER UP or ICON SIZE</b></li>
+                                    <li>$05 -- <!---->
+                                        <b>LINE</b></li>
+                                    <li>$08 -- <!---->
+                                        <b>FLATS</b></li>
+                                    <li>$12 -- <!---->
+                                        <b>RENDERING</b></li>
+                                    <li class="list-unstyled"><hr class="hr"></li>
+                                    <li class="list-unstyled"><b>FULLBODY or HALF UP</b></li>
+                                    <li>$05 -- <!---->
+                                        <b>LINE</b></li>
+                                    <li>$10 -- <!---->
+                                        <b>FLATS</b></li>
+                                    <li>$20 -- <!---->
+                                        <b>RENDERING</b></li>
+                                    <li class="list-unstyled"><hr class="hr"></li>
+                                    <li>+$5 -- <!---->
+                                        <b>Additional Main Character</b></li>
+                                        <ul><li>Flat rate across all rendering levels</li></ul>
+                                    <li>+$5-10 - <!---->
+                                        <b>Complex Scene/Background</b></li>
+                                        <ul><li>Color/pattern  backgrounds are free</li>
+                                        <li>Depends on complexity (lets discuss!)</li>
+                                        <li>I love perspective but those are DEF more expensive</li></ul>
+                                    <li>All examples in the image carousel have captions describing their worth.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- oh my god. okay. -->
+                    
+                    <div class="col-10 p-0 m-3 d-flex flex-column rounded" style="background-color: black;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-8 text-center">
+                                <div id="carouselscreenie" class="carousel slide carousel-fade">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselscreenie" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselscreenie" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselscreenie" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselscreenie" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselscreenie" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselscreenie" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                      </div>
+                                    <div id="wideguys" class="carousel-inner">
+                                        
+                                        <div class="carousel-item active">
+                                            <img src="https://64.media.tumblr.com/c124516cab1d3a8e5f6f02b3e0ee3d64/bd15ebe9ce06b6e0-55/s1280x1920/eef0fad9a904c53fb52a9a118ae3438a43f9e8d7.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>EDIT: 2 New Characters, cleaned up. $15.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://file.garden/X_3khxgapBy70O8i/toyhouse/echoace1.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>EDIT: 2 New Characters, no cleanup. $10.<br>(ash dw this was a gift im just using it as an example LOL)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://file.garden/X_3khxgapBy70O8i/toyhouse/choroakari.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>EDIT: 1 New Character, cleaned up. $10.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://file.garden/X_3khxgapBy70O8i/toyhouse/zim/sillyz1" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>ZIM STYLE: 3 Characters, Simple Background. $15.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://64.media.tumblr.com/22c0b314d69e691764933ba138f874f1/06fd53b84ff317ef-21/s1280x1920/5349f5c65bcc309b3b4c5d2c6c3dbcd24a40c6a0.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>FANDOM STYLE: 1 Character Flat. Complex Background. $13.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://f2.toyhou.se/file/f2-toyhou-se/watermarks/62918777_ExX3Qlciz.png" class="rounded img-fluid">
+                                            <div id="txtborder" class="carousel-caption d-block">
+                                                <p>FANDOM STYLE: 8 Character Rendered. Complex Background. $52.<br>(drawing all the matsunos is hard.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselscreenie" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselscreenie" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 p-4 fw-normal" style="font-family: 'Exo 2', sans-serif;">
+                                <h2 id="screenies" class="fw-bold">Screenshot Edits!</h2>
+                                <ul>
+                                    <li class="list-unstyled">put yer blorbos in situations!!</li>
+                                    <li>+$5 -- <!---->
+                                        <b>Each new character</b></li>
+                                    <li>+$5-10 -- <!---->
+                                        <b>Complexity of clean-up OR background</b></li>
+                                    <li>list of fandoms i do <a href="https://docs.google.com/document/d/1A73-y09cyhCZnLI6Vtl0B2OPe3S5aalQ4nQB37pqJ-g/edit">here.</a></li>
+                                    <ul><li>+$5 for any fandom w/ no star</li>
+                                    <li>will NOT do 3D for edits</li></ul>
+                                </ul>
+                                <h2 id="stylematch" class="fw-bold">Fandom Style</h2>
+                                <ul>
+                                    <li>Uses Normal Style's "Shoulder Up and Icon Size" prices.</li>
+                                    <li>I love Invader Zim. Zim/JV style is priced the same as screenshot edits. (Generally cheaper)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <p class="text-center mb-0"><img src="img/divider_starline.png" class="img-fluid"></p>
@@ -154,8 +358,9 @@
                     <img src="img/decome_star.gif"></div>
             </div>
 
-            <div class="col-11 m-2 fw-normal text-center" style="font-family: 'Exo 2', sans-serif; word-wrap: break-word;">
-                i have actually never used trello! seems v useful tho, i def should :Vc
+            <div class="col-10 col-sm-9 m-2 fw-normal text-center" style="font-family: 'Exo 2', sans-serif; word-wrap: break-word;">
+                <p>if you don't have iframes enabled, <a href="https://trello.com/b/hmjhEQlF/da-workboard">here's the link!</a></p>
+                <iframe src="https://trello.com/b/hmjhEQlF.html" style="width:100%;height:400px;"></iframe>
             </div>
         </div>
     </div>
