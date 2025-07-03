@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>phantasia's ukagaka hub!</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="phantasia's ukagaka hub!"/>
+	<meta property="og:description" content="download and info hub for ukagaka content and desktop toys that phantasia makes!"/>
+	<meta property="og:url" content="https://whataphantasia.github.io/projects/ukagaka/extra/yaya-tarot"/>
+	<meta property="og:image" content="https://whataphantasia.github.io/img/ukgk/splash.png"/>
+	
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<link href="/assets/css/bs_main.css" rel="stylesheet">
+    <link href="/assets/css/bs_ukgk.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar! -->
+	<div id="nav-base"></div>
+	<script>
+	$(function(){
+	$("#nav-base").load("/projects/ukagaka/nav.html");
+	});
+	</script>
+	<!-- navbar! -->
+
+    <div class="col-xl-11 p-3 mb-1 mx-auto rounded" style="background-color: #bfbfbf; margin-top: 100px;">
+        <div class="row p-3 align-items-center justify-content-center text-center">
+            <div class="col-md-5 order-2 order-md-1 text-center align-content-center">
+                <div class="d-flex justify-content-center align-items-center text-center mb-2">
+                    <div class="px-1" style="line-height: 1; margin-bottom: 0.5rem;">
+                        <img src="/img/decome_wing1.gif"></div>
+                    <div class="px-1">
+                        <h1 id="yayatarot" style="font-family: 'Courier New', monospace; font-size: 36px; line-height: 1; font-weight: bold; font-variant: small-caps; margin-bottom: 0;">
+                        YAYA Tarot Framework</h1></div>
+                    <div class="px-1" style="line-height: 1; margin-bottom: 0.5rem;">
+                        <img src="/img/decome_wing2.gif"></div>
+                </div>
+                <p class="text-center" style="font-size: 14px; color: #867b89;">ORIGINAL RELEASE: July 2nd, 202<br>
+                    CURRENT VER: v0.9.0</p>
+
+                <div class="px-2 text-start fw-normal">
+                    <p><span class="ms-4"></span>Made for Vera, now packaged in a neat little .nar. Features include:</p>
+					<p><ul>
+						<li>recognizes number, suit, and arcana</li>
+						<li>corresponding images to drawing cards</li>
+						<li>three-card basic spread and custom-card-count spread</li>
+						<li>does NOT include reversals</li>
+						<li>the tarot images are in black and white. super sorry about that- if theres any interest in this i'll get the color versions.</li>
+					</ul></p>
+                </div>
+
+                <a href="https://file.garden/X_3khxgapBy70O8i/Ukagaka%20Downloads/Code/YAYA%20Tarot%20Code%20-%20Phantasia/YAYA%20Tarot%20Code%20-%20Phantasia%20v0.9.0.zip">
+                <button type="button" class="btn btn-dark py-2 px-0 mb-3 w-100" style="background-color: rgb(90, 0, 90);">
+                    Download Code (zip file)</button></a>
+            </div>
+            <div class="col-md-5 order-1 order-md-2 text-center align-content-center">
+                <a href="/projects/ukagaka/extra/"><button type="button" class="btn btn-outline-dark w-100 mb-2">Back</button></a>
+                <img src="/img/ukgk/tarot_thumb.png" class="img-fluid my-2">
+            </div>
+        </div>
+
+        <!-- huh that wasn't actually that hard -->
+
+        <div class="row p-3 align-items-center justify-content-center text-center">
+            <div class="col-10">
+                <div class="accordion" id="accrambles">
+                    <div class="accordion-item">
+                        <h3 id="rambles" class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Phanta Rambles
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accrambles">
+                            <div class="accordion-body text-start fw-normal">
+                                <span class="ms-4"></span>decided to package this one up since theres interest in tarot codes :) PLEASE dont think that im trying to be an AUTHORITY on code or anything (ive never even gone to a coding class LMAO) i just want there to be resources out there :D my solution is definitely not elegant at all since i wrote this two years ago, but i hope it helps :]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<footer>
+	<div class="col-xl-11 p-1 mt-1 mx-auto rounded" style="background-color: #bfbfbf; margin-bottom: 25px;">
+		<div id="footer-base"></div>
+		<script>
+		$(function(){
+		$("#footer-base").load("/footer.html");
+		});
+		</script>
+	</div>
+</footer>
